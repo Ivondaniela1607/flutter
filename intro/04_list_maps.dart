@@ -21,7 +21,7 @@ void main() {
 
   //numeros mayores a 5
   //metodo where: metodo de los listados que permite aplicar cierto filtro
-  final numberGreaterThan5 = numbers.where((num) {
+  final numberGreaterThan5 = numbers.where((int num) {
     return num > 5; // regresa true
   });
 
