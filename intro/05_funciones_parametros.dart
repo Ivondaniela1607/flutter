@@ -1,8 +1,11 @@
 void main() {
   print(greetEveryOne());
+
   print('Suma ${addTwoNumbers(10, 20)}');
   print('Suma funcion flecha ${addTwoNumbers(100, 200)}');
   print('Suma funcion opcional ${addTwoNumbersOpcional(100)}');
+
+  print('/ ${greetPerson(name: 'Dani', saludo: 'ummmm, ')}');
 }
 
 String greetEveryOne() {
@@ -24,4 +27,10 @@ int addTwoNumbersOpcional(int a, [int? b]) {
   // otra forma de hacerlo es
   b ??= 0;
   return a + b;
+}
+
+//En la parte del argumento las llaves {} seran opcionales
+
+String greetPerson({required String name, String saludo = 'Saludo'}) {
+  return '$saludo Hola Dani';
 }
